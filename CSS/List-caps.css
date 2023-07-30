@@ -1,0 +1,148 @@
+/* FUENTES EXTERNAS Y VARIABLES GLOBALES */
+@font-face {
+  font-family: Kanit-Regular;
+  src: url(../Assets/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: Kanit-ExtBold;
+  src: url(../Assets/Kanit/Kanit-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Kanit-Medium;
+  src: url(../Assets/Kanit/Kanit-Medium.ttf);
+}
+@font-face {
+  font-family: Kanit-Black;
+  src: url(../Assets/Kanit/Kanit-Black.ttf);
+}
+@font-face {
+  font-family: Kanit-light;
+  src: url(../Assets/Kanit/Kanit-Light.ttf);
+}
+:root {
+  --kanit-regular: Kanit-Regular;
+  --kanit-ExtBold: Kanit-ExtBold;
+  --kanit-medium: Kanit-Medium;
+  --kanit-black: Kanit-Black;
+  --kanit-light: Kanit-light;
+  --color1: #0198fa;
+  --color2: #fff;
+  --color3: #000;
+  --color4: #ff5719;
+}
+
+/* Estilos Para La Subpágina de Lista de Episodios De Chainsaw Man */
+.hero-image {
+  margin: 1rem auto 0;
+  width: 95%;
+  height: 600px;
+  background-image: url(../IMG/Chainsaw\ Man/imagen\ 2.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  border: medium var(--color1) solid;
+  overflow: hidden;
+}
+.black-cape {
+  background-color: #0007;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-title {
+  text-align: center;
+  color: var(--color2);
+  font-family: var(--kanit-black);
+  font-size: 3rem;
+}
+
+.article1 {
+  width: 100%;
+  height: auto;
+  background-color: var(--color1);
+}
+.article1-title {
+  font-size: 1.7rem;
+  color: var(--color2);
+  text-align: center;
+  font-family: var(--kanit-ExtBold);
+  padding: 1.5rem;
+}
+
+/* Estilos Para Las Miniaturas */
+.miniatura-eps {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: medium var(--color2) solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.miniatura-img {
+  width: 40%;
+  height: 80px;
+  border-radius: 10px;
+  border: medium var(--color2) solid;
+}
+.miniatura-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.number-eps {
+  color: var(--color2);
+  font-family: var(--kanit-black);
+  font-size: 1.3rem;
+}
+.eps-title {
+  color: var(--color2);
+  font-family: var(--kanit-ExtBold);
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  width: 40%;
+}
+/* Estilos Episodio */
+.img-article1 {
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: medium var(--color2) solid;
+  border-radius: 10px;
+  display: block;
+}
+.sipnosis {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: var(--color3);
+  padding: 1rem;
+  font-family: var(--kanit-regular);
+  background-color: var(--color2);
+  text-align: justify;
+}
+.sipnosis b {
+  color: var(--color4);
+}
+/* Estilos Contenedor del iframe */
+.article1-iframe {
+  width: 100%;
+  height: auto;
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+.article1-iframe iframe {
+  width: 95%;
+  height: 200px;
+  border-radius: 10px;
+  border: medium var(--color2) solid;
+}

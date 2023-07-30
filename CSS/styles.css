@@ -1,0 +1,430 @@
+/* Reseteo De Valores */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: var(--kanit-light);
+}
+img,
+video,
+iframe,
+picture,
+svg {
+  max-width: 100%;
+}
+p {
+  margin-top: 0;
+}
+
+/* FUENTES EXTERNAS Y VARIABLES GLOBALES */
+@font-face {
+  font-family: Kanit-Regular;
+  src: url(../Assets/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: Kanit-ExtBold;
+  src: url(../Assets/Kanit/Kanit-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Kanit-Medium;
+  src: url(../Assets/Kanit/Kanit-Medium.ttf);
+}
+@font-face {
+  font-family: Kanit-Black;
+  src: url(../Assets/Kanit/Kanit-Black.ttf);
+}
+@font-face {
+  font-family: Kanit-light;
+  src: url(../Assets/Kanit/Kanit-Light.ttf);
+}
+:root {
+  --kanit-regular: Kanit-Regular;
+  --kanit-ExtBold: Kanit-ExtBold;
+  --kanit-medium: Kanit-Medium;
+  --kanit-black: Kanit-Black;
+  --kanit-light: Kanit-light;
+  --color1: #0198fa;
+  --color2: #fff;
+  --color3: #000;
+  --color4: #ff5719;
+}
+
+/* ANIMACION Y KEY-FRAMES */
+@keyframes shake {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(1px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-1px);
+  }
+}
+
+/* Estilos Header & Menu Hamburguesa*/
+.main-header {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color1);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 9999999999;
+}
+.flexRow-CC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: var(--color2);
+  font-size: 1.7rem;
+  text-decoration: none;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: var(--kanit-ExtBold);
+}
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+.logo:hover {
+  animation: shake 400ms ease-out both;
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all 0.2s linear;
+  background-color: #0007;
+  z-index: 100;
+}
+.main-nav.show {
+  margin-left: 0;
+}
+.nav-links {
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.link-item {
+  margin-top: 2rem;
+  color: var(--color2);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+}
+.link-item::after {
+  position: absolute;
+  content: "";
+  background-color: var(--color2);
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s ease all;
+}
+.link-item:hover::after {
+  width: 100%;
+}
+.button-menu {
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button-menu span {
+  width: 2rem;
+  height: 0.25rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  background: var(--color2);
+  border-radius: 0.2rem;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: var(--color2);
+}
+.button-menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+.button-menu.close span:nth-child(3) {
+  display: none;
+}
+
+/* ====================== Estilos Seccion 1 ==================*/
+.section1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1-title {
+  font-size: 1.5rem;
+}
+.anime-cards_container {
+  background-color: var(--color1);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos de las Cards */
+.anime-cards {
+  width: 80%;
+  margin: 1rem;
+  background-color: var(--color2);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.anime-cards_img {
+  border-radius: 1rem;
+}
+.anime-cards_text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+/*  =============================== Carrusel ================================================== */
+/* Clase Para El Fondo De Cada Imagen Del Carrusel */
+.img1 {
+  background-image: url("../IMG/Chainsaw\ Man.png");
+}
+.img2 {
+  background-image: url("../IMG/Naruto\ 2.jpg");
+}
+.img3 {
+  background-image: url("../IMG/Death\ Note\ 2.jpg");
+  background-position: 100%;
+}
+.img4 {
+  background-image: url("../IMG/Nanatzu\ no\ Taizai.jfif");
+  background-position: top;
+}
+
+/* Clases Y Estilos Para El Carrusel */
+#container-slider,
+#container-slider2,
+#container-slider3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+#slider,
+#slider2,
+#slider3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+#slider li,
+#slider2 li,
+#slider3 li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: opacity 1s;
+  z-index: -1;
+  opacity: 0;
+}
+#container-slider .arrowPrev,
+#container-slider .arrowNext,
+#container-slider2 .arrowPrev,
+#container-slider2 .arrowNext,
+#container-slider3 .arrowPrev,
+#container-slider3 .arrowNext {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  color: var(--color1);
+  background-color: var(--color2);
+  border-radius: 53%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 15px;
+  margin: 7px;
+}
+#container-slider .arrowNext,
+#container-slider2 .arrowNext,
+#container-slider3 .arrowNext {
+  left: initial;
+  right: 15px !important;
+}
+.content_slider {
+  padding: 15px 30px;
+  color: var(--color2);
+  width: 100%;
+  height: 100%;
+}
+.content_slider div {
+  text-align: center;
+}
+.content_slider h2 {
+  font-family: var(--kanit-black);
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content_slider a {
+  font-family: "arial";
+  color: var(--color2);
+  background-color: var(--color1);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+  font-size: 1rem;
+  text-decoration: none;
+}
+#slider li .content_slider,
+#slider2 li .content_slider,
+#slider3 li .content_slider {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 35px;
+}
+.content_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listslider,
+.listslider2,
+.listslider3 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  bottom: 5%;
+  list-style: none;
+  z-index: 2;
+  transform: translateX(-50%);
+  padding: 0;
+}
+.listslider li,
+.listslider2 li,
+.listslider3 li {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.listslider li a,
+.listslider2 li a,
+.listslider3 li a {
+  background: var(--color2);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.item-select-slid {
+  background: var(--color1) !important;
+}
+
+/* ====================================== Estilos Para El Foooter ============================= */
+
+.footer {
+  background-color: #0198fa;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social a svg {
+  width: 2.3rem;
+  height: 2.3rem;
+  fill: var(--color2);
+}
+.button-listcaps {
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button-listcaps span {
+  width: 2rem;
+  height: 0.25rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  background: var(--color2);
+  border-radius: 0.2rem;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+.article-titlePrincipal {
+  font-family: var(--kanit-ExtBold);
+  color: var(--color2);
+  text-align: center;
+}

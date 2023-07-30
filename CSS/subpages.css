@@ -1,0 +1,162 @@
+/* FUENTES EXTERNAS Y VARIABLES GLOBALES */
+@font-face {
+  font-family: Kanit-Regular;
+  src: url(../Assets/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: Kanit-ExtBold;
+  src: url(../Assets/Kanit/Kanit-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Kanit-Medium;
+  src: url(../Assets/Kanit/Kanit-Medium.ttf);
+}
+@font-face {
+  font-family: Kanit-Black;
+  src: url(../Assets/Kanit/Kanit-Black.ttf);
+}
+@font-face {
+  font-family: Kanit-light;
+  src: url(../Assets/Kanit/Kanit-Light.ttf);
+}
+:root {
+  --kanit-regular: Kanit-Regular;
+  --kanit-ExtBold: Kanit-ExtBold;
+  --kanit-medium: Kanit-Medium;
+  --kanit-black: Kanit-Black;
+  --kanit-light: Kanit-light;
+  --color1: #0198fa;
+  --color2: #fff;
+  --color3: #000;
+  --color4: #ff5719;
+}
+
+.link-item svg {
+  width: 2.3rem;
+  height: 2.3rem;
+  fill: var(--color2);
+}
+
+/* Estilos Para La Sub-Pagina de Chainsaw Man */
+.hero-image {
+  margin: 1rem auto 0;
+  width: 95%;
+  height: 600px;
+  background-image: url(../IMG/Chainsaw\ Man/hero\ image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  border: medium var(--color1) solid;
+  overflow: hidden;
+}
+.black-cape {
+  background-color: #0007;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-title {
+  text-align: center;
+  color: var(--color2);
+  font-family: var(--kanit-black);
+  font-size: 3rem;
+}
+.article1 {
+  width: 100%;
+  background-color: var(--color1);
+  padding: 1rem;
+}
+.article-titlePrincipal {
+  font-family: var(--kanit-ExtBold);
+  color: var(--color2);
+  text-align: center;
+}
+.article1-img1 {
+  overflow: hidden;
+  border-radius: 10px;
+  border: medium var(--color2) solid;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 500px;
+}
+.article1-img1 img {
+  width: 100%;
+  height: 100%;
+}
+.article1-img1 img:hover {
+  transform: scale(1.1);
+  transition: 300ms ease-in;
+}
+.article1-content {
+  color: var(--color3);
+  padding: 1rem;
+  text-align: justify;
+  background-color: var(--color2);
+  border-radius: 10px;
+}
+.dec > p b,
+.dec > p a {
+  color: var(--color4);
+  font-family: var(--kanit-medium);
+}
+.dec > p a:visited {
+  color: var(--color4);
+}
+.dec > p a:hover {
+  color: var(--color1);
+}
+.trailer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 250px;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: medium var(--color1) solid;
+}
+.subtitle-content {
+  color: var(--color4);
+  font-family: var(--kanit-ExtBold);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.article1-content > li a {
+  text-decoration: none;
+  font-family: var(--kanit-medium);
+  color: var(--color4);
+}
+.cap-mangas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cap-mangas p {
+  text-align: left;
+  text-overflow: clip;
+}
+.cap-mangas p a {
+  color: var(--color3);
+  font-family: var(--kanit-light);
+}
+.cap-mangas p a:hover {
+  color: var(--color4);
+}
+.cap-mangas p b {
+  color: var(--color4);
+}
+.article1-img2 {
+  overflow: hidden;
+  border-radius: 10px;
+  border: medium var(--color4) solid;
+  width: 100%;
+  height: 300px;
+}
+.article1-img2 img {
+  width: 100%;
+  height: 100%;
+}

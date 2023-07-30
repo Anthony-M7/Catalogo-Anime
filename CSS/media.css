@@ -1,0 +1,43 @@
+@media screen and (min-width: 480px) {
+  .img1 {
+    background-image: url("../IMG/Chainsaw\ Man 2.webp");
+  }
+  .img2 {
+    background-image: url("../IMG/Naruto.jpeg");
+  }
+  .img3 {
+    background-image: url("../IMG/Death\ Note\ 3.jpg");
+    background-position: 100%;
+  }
+  .img4 {
+    background-image: url("../IMG/Nanatzu\ no\ Taizai\ 2.webp");
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+  .main-logo {
+    flex-basis: 30%;
+  }
+  .main-nav {
+    position: static;
+    margin-left: 0;
+    flex-basis: 60%;
+    height: 100%;
+  }
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background: #0198fa;
+  }
+  .link-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+} */
