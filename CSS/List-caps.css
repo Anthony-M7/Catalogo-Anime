@@ -112,6 +112,15 @@ body {
   text-align: center;
   width: 40%;
 }
+.Enlace {
+  color: var(--color2);
+  font-family: var(--kanit-ExtBold);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 1px;
+}
 /* Estilos Para El Glosario */
 .caps-glosario {
   width: 90%;
