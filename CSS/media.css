@@ -1,43 +1,260 @@
-@media screen and (min-width: 480px) {
-  .img1 {
-    background-image: url("../IMG/Chainsaw\ Man 2.webp");
+/* Medias Para Las Páginas Principales: Inicio, Login, Directorio, Animes */
+
+@media screen and (min-width: 425px) {
+  .card-container {
+    width: 75%;
   }
-  .img2 {
-    background-image: url("../IMG/Naruto.jpeg");
-  }
-  .img3 {
-    background-image: url("../IMG/Death\ Note\ 3.jpg");
-    background-position: 100%;
-  }
-  .img4 {
-    background-image: url("../IMG/Nanatzu\ no\ Taizai\ 2.webp");
+  .card-container_letras {
+    width: calc(100vw / 2.5);
+    height: calc(100vh / 4.5);
   }
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  /* ================================= Estilos Para El Header 768px =========================== */
+  .main-header {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
   .button-menu {
     display: none;
   }
-  .main-logo {
-    flex-basis: 30%;
+  .flexRow-CC {
+    width: 55%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .main-nav {
     position: static;
+    height: auto;
     margin-left: 0;
-    flex-basis: 60%;
-    height: 100%;
   }
   .nav-links {
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     background: #0198fa;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .link-item {
     display: inline-block;
-    margin-top: 0;
-    margin-right: 2rem;
+    margin: 0;
+    font-size: 1.1rem;
   }
-} */
+  .inicio {
+    margin: 0;
+  }
+
+  /* ====================================== Estilos Para El Carrusel ========================== */
+  .section1-title {
+    font-size: 2rem;
+  }
+  .img1 {
+    background-image: url("../IMG/ChainsawMan768px.webp");
+  }
+  .img2 {
+    background-image: url("../IMG/Naruto768px.jpeg");
+  }
+  .img3 {
+    background-image: url("../IMG/DeathNota768px.jpg");
+    background-position: 100%;
+  }
+  .img4 {
+    background-image: url("../IMG/NanatzuNoTaizai768px.webp");
+  }
+  #container-slider,
+  #container-slider2,
+  #container-slider3 {
+    width: 90%;
+    overflow: hidden;
+  }
+  #slider,
+  #slider2,
+  #slider3 {
+    width: 100%;
+    height: calc(100vh - 57px);
+  }
+  #container-slider .arrowPrev,
+  #container-slider .arrowNext,
+  #container-slider2 .arrowPrev,
+  #container-slider2 .arrowNext,
+  #container-slider3 .arrowPrev,
+  #container-slider3 .arrowNext {
+    font-size: 35px;
+    width: 37px;
+    height: 37px;
+  }
+  .content_slider {
+    position: relative;
+  }
+  .content_slider div {
+    position: absolute;
+    bottom: 60px;
+  }
+  .content_slider h2 {
+    font-size: 2rem;
+  }
+  .content_slider a {
+    font-family: var(--kanit-black);
+    font-size: 1.1rem;
+  }
+
+  /* Estilos de las Cards */
+  .anime-cards_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .anime-cards {
+    width: calc(100vw / 2.3);
+    height: 330px;
+  }
+  .anime-cards_img img {
+    height: 200px;
+  }
+
+  /* Estilos Subpagina 'Animes' */
+  .content1 {
+    flex-direction: row;
+  }
+  .card-container {
+    width: calc(100vw / 3.5);
+    height: calc(100vh / 1.5);
+  }
+  .card-container span,
+  .ir label {
+    font-size: 2rem;
+  }
+  .img-card {
+    width: 100%;
+    height: 200px;
+  }
+  .img-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .text-card {
+    font-size: 1rem;
+    margin-top: 10px;
+    height: 100px;
+  }
+
+  /* Estilos Casita de Inicio */
+  .inicio {
+    width: 2rem;
+    height: 2rem;
+    /* margin: 32px 0 0; */
+  }
+  .inicio svg {
+    fill: var(--color2);
+  }
+
+  /* Estilos Cards Del  Directorio */
+  .card-container_letras {
+    width: calc(100vw / 3.8);
+    height: calc(100vh / 5.4);
+  }
+}
+
+/* Medias Para Las Paginas Secundarias: Biografias, Listas, Episodios, etc */
+@media screen and (min-width: 768px) {
+  /* Estilos Para La Subpágina de Lista de Episodios De Chainsaw Man */
+  .hero-image {
+    width: 90%;
+    height: calc(100vh - 60px);
+    background-image: url(../IMG/ChainsawMan768px.webp);
+    background-position: center top;
+  }
+  .black-cape {
+    height: 100%;
+  }
+  /* Estilos Para Las Miniaturas */
+  .miniatura-eps {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .number-eps {
+    font-size: 1.4rem;
+  }
+  .eps-title {
+    font-size: 1.1rem;
+    width: 40%;
+  }
+
+  /* ================================ Estilos Episodio ========================================== */
+  .article-titlePrincipal {
+    width: 48%;
+  }
+  .article768px {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .img-article1 {
+    width: 48%;
+    order: 1;
+  }
+  .sipnosis {
+    width: 48%;
+    order: 5;
+  }
+  /* Estilos Contenedor del iframe */
+  .article1-iframe iframe {
+    width: 95%;
+    height: calc(100vh - 70px);
+  }
+  .controls-eps {
+    width: 60%;
+    height: auto;
+    justify-content: space-evenly;
+  }
+  .next,
+  .down {
+    font-size: 1.1rem;
+  }
+
+  /*============================== Estilos Para La Sub-Pagina de Información ============================*/
+  .hero-image {
+    width: 75%;
+    height: calc(100vh - 70px);
+    background-position: center top;
+  }
+  .black-cape {
+    height: 100%;
+  }
+  .article1-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .article-titlePrincipal {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .article1-img1 {
+    width: 30%;
+    float: left;
+    height: 300px;
+    margin: 1rem;
+    margin-left: 5.5rem;
+    border-radius: 21px;
+    overflow: hidden;
+  }
+  .article1-img1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .trailer1 {
+    width: 70%;
+    height: 360px;
+  }
+}

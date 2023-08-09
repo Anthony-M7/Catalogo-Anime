@@ -200,47 +200,21 @@ p {
 .section1-title {
   font-size: 1.5rem;
 }
-.anime-cards_container {
-  background-color: var(--color1);
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Estilos de las Cards */
-.anime-cards {
-  width: 80%;
-  margin: 1rem;
-  background-color: var(--color2);
-  border-radius: 1rem;
-  padding: 1rem;
-}
-.anime-cards_img {
-  border-radius: 1rem;
-}
-.anime-cards_text {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 1rem;
-}
 
 /*  =============================== Carrusel ================================================== */
 /* Clase Para El Fondo De Cada Imagen Del Carrusel */
 .img1 {
-  background-image: url("../IMG/Chainsaw\ Man.png");
+  background-image: url("../IMG/ChainsawMan320px.png");
 }
 .img2 {
-  background-image: url("../IMG/Naruto\ 2.jpg");
+  background-image: url("../IMG/Naruto320px.jpg");
 }
 .img3 {
-  background-image: url("../IMG/Death\ Note\ 2.jpg");
+  background-image: url("../IMG/DeathNote320px.jpg");
   background-position: 100%;
 }
 .img4 {
-  background-image: url("../IMG/Nanatzu\ no\ Taizai.jfif");
+  background-image: url("../IMG/NanatzuNoTaizai320px.jfif");
   background-position: top;
 }
 
@@ -321,7 +295,7 @@ p {
   text-transform: uppercase;
 }
 .content_slider a {
-  font-family: "arial";
+  font-family: var(--kanit-black);
   color: var(--color2);
   background-color: var(--color1);
   padding: 0.6rem;
@@ -379,6 +353,57 @@ p {
   background: var(--color1) !important;
 }
 
+/* Estilos de las Cards */
+.anime-cards_container {
+  background-color: var(--color1);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.anime-cards {
+  width: 80%;
+  height: calc(100vh - 65px);
+  margin: 1rem;
+  background-color: var(--color2);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.anime-cards_img {
+  border-radius: 1rem;
+  width: 100%;
+}
+.anime-cards_img img {
+  width: 100%;
+  border-radius: 1rem;
+  height: 350px;
+  object-fit: cover;
+}
+.anime-cards_text {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.anime-cards_text h3 {
+  font-family: var(--kanit-regular);
+  margin: 10px;
+  font-size: 1.4rem;
+}
+.anime-cards_text a {
+  font-family: var(--kanit-medium);
+  color: var(--color2);
+  background-color: var(--color1);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 /* ====================================== Estilos Para El Foooter ============================= */
 
 .footer {
@@ -432,12 +457,13 @@ p {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   background-color: var(--color1);
 }
 .card-container {
-  width: 80%;
+  width: 90%;
+  height: calc(100vh - 65px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -462,12 +488,14 @@ p {
 .img-card {
   overflow: hidden;
   border-radius: 10px;
-  height: 200px;
+  height: 100%;
 }
 .img-card img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  object-fit: contain;
-  object-position: center bottom;
+  object-fit: cover;
+  object-position: center top;
 }
 .img-card img:hover {
   transform: scale(1.1);
@@ -491,7 +519,26 @@ p {
   width: 2.3rem;
   height: 2.3rem;
   margin: 32px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inicio svg {
   fill: var(--color2);
+}
+
+/* Estilos Del Directorio */
+.card-container_letras {
+  width: 90%;
+  height: calc(100vh / 4.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
