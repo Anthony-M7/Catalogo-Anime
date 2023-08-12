@@ -66,24 +66,19 @@
   .img4 {
     background-image: url("../IMG/NanatzuNoTaizai768px.webp");
   }
-  #container-slider,
-  #container-slider2,
-  #container-slider3 {
+  .img5 {
+    background-image: url("../IMG/Hataraku768px.jpg");
+  }
+  #container-slider {
     width: 90%;
     overflow: hidden;
   }
-  #slider,
-  #slider2,
-  #slider3 {
+  #slider {
     width: 100%;
     height: calc(100vh - 57px);
   }
   #container-slider .arrowPrev,
-  #container-slider .arrowNext,
-  #container-slider2 .arrowPrev,
-  #container-slider2 .arrowNext,
-  #container-slider3 .arrowPrev,
-  #container-slider3 .arrowNext {
+  #container-slider .arrowNext {
     font-size: 35px;
     width: 37px;
     height: 37px;
@@ -109,11 +104,32 @@
     flex-wrap: wrap;
   }
   .anime-cards {
-    width: calc(100vw / 2.3);
+    width: calc(100vw / 2.4);
     height: 330px;
   }
   .anime-cards_img img {
     height: 200px;
+  }
+
+  /* Estilos Para El Top */
+  .top-container {
+    justify-content: center;
+  }
+  .pos-top {
+    width: calc(100% / 4);
+    height: auto;
+  }
+  .pos-top img {
+    height: auto;
+  }
+
+  /* Estilos Enlaces */
+
+  .title-link {
+    font-size: 1.3rem;
+  }
+  .title-link a {
+    font-size: 1.4rem;
   }
 
   /* Estilos Subpagina 'Animes' */

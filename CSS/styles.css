@@ -217,27 +217,25 @@ p {
   background-image: url("../IMG/NanatzuNoTaizai320px.jfif");
   background-position: top;
 }
+.img5 {
+  background-image: url("../IMG/Hataraku320px.jpg");
+  background-position: top;
+}
 
 /* Clases Y Estilos Para El Carrusel */
-#container-slider,
-#container-slider2,
-#container-slider3 {
+#container-slider {
   position: relative;
   display: block;
   width: 100%;
   padding: 0.5rem;
 }
-#slider,
-#slider2,
-#slider3 {
+#slider {
   position: relative;
   display: block;
   width: 100%;
   height: 400px;
 }
-#slider li,
-#slider2 li,
-#slider3 li {
+#slider li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,11 +250,7 @@ p {
   opacity: 0;
 }
 #container-slider .arrowPrev,
-#container-slider .arrowNext,
-#container-slider2 .arrowPrev,
-#container-slider2 .arrowNext,
-#container-slider3 .arrowPrev,
-#container-slider3 .arrowNext {
+#container-slider .arrowNext {
   font-size: 25px;
   display: flex;
   justify-content: center;
@@ -273,9 +267,7 @@ p {
   left: 15px;
   margin: 7px;
 }
-#container-slider .arrowNext,
-#container-slider2 .arrowNext,
-#container-slider3 .arrowNext {
+#container-slider .arrowNext {
   left: initial;
   right: 15px !important;
 }
@@ -306,9 +298,11 @@ p {
   font-size: 1rem;
   text-decoration: none;
 }
-#slider li .content_slider,
-#slider2 li .content_slider,
-#slider3 li .content_slider {
+.content_slider span {
+  font-size: 3rem;
+  font-family: var(--kanit-black);
+}
+#slider li .content_slider {
   background: rgba(0, 0, 0, 0.5);
   padding: 10px 35px;
 }
@@ -317,9 +311,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.listslider,
-.listslider2,
-.listslider3 {
+.listslider {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -331,18 +323,14 @@ p {
   transform: translateX(-50%);
   padding: 0;
 }
-.listslider li,
-.listslider2 li,
-.listslider3 li {
+.listslider li {
   border-radius: 50%;
   width: 10px;
   height: 10px;
   cursor: pointer;
   margin: 0 5px;
 }
-.listslider li a,
-.listslider2 li a,
-.listslider3 li a {
+.listslider li a {
   background: var(--color2);
   border-radius: 50%;
   width: 100%;
@@ -365,7 +353,7 @@ p {
 }
 .anime-cards {
   width: 80%;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 50px);
   margin: 1rem;
   background-color: var(--color2);
   border-radius: 1rem;
@@ -402,6 +390,77 @@ p {
   border-radius: 1rem;
   font-size: 1rem;
   text-decoration: none;
+}
+
+/* Estilos Para El Top */
+.top-title {
+  color: var(--color2);
+  font-family: var(--kanit-black);
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1px;
+}
+.top-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.pos-top {
+  width: 230px;
+  height: 355px;
+  border-radius: 10px;
+  background-color: var(--color2);
+  margin: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.pos-top span {
+  align-self: center;
+  justify-self: center;
+  bottom: 50%;
+  left: auto;
+  color: var(--color2);
+  font-family: var(--kanit-ExtBold);
+  font-size: 2rem;
+  position: absolute;
+}
+.pos-top img {
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+  padding: 1rem;
+  border-radius: 1.7rem;
+}
+.pos-top div {
+  color: var(--color3);
+  font-size: 1.1rem;
+  font-family: var(--kanit-black);
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilos Enlaces */
+
+.title-link {
+  color: var(--color3);
+  font-family: var(--kanit-medium);
+  font-size: 1.1rem;
+  margin: 0;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.title-link a {
+  color: var(--color1);
+  font-size: 1.2rem;
 }
 
 /* ====================================== Estilos Para El Foooter ============================= */
