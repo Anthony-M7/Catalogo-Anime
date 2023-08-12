@@ -1,5 +1,14 @@
 /* Medias Para Las Páginas Principales: Inicio, Login, Directorio, Animes */
 
+@media screen and (min-width: 375px) {
+  .anime-cards {
+    height: 460px;
+  }
+  .anime-cards_img img {
+    height: 345px;
+  }
+}
+
 @media screen and (min-width: 425px) {
   .card-container {
     width: 75%;
@@ -7,6 +16,12 @@
   .card-container_letras {
     width: calc(100vw / 2.5);
     height: calc(100vh / 4.5);
+  }
+  .anime-cards {
+    height: 500px;
+  }
+  .anime-cards_img img {
+    height: 385px;
   }
 }
 

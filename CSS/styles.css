@@ -353,7 +353,7 @@ p {
 }
 .anime-cards {
   width: 80%;
-  height: calc(100vh - 50px);
+  height: 430px;
   margin: 1rem;
   background-color: var(--color2);
   border-radius: 1rem;
@@ -369,7 +369,7 @@ p {
 .anime-cards_img img {
   width: 100%;
   border-radius: 1rem;
-  height: 350px;
+  height: 280px;
   object-fit: cover;
 }
 .anime-cards_text {
