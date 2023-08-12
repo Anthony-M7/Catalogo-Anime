@@ -446,6 +446,15 @@ p {
   text-align: center;
   margin: 0;
 }
+#pos1 {
+  background-color: #f2fa0a;
+}
+#pos2 {
+  background-color: #c0c0c0;
+}
+#pos3 {
+  background-color: #cd7f32;
+}
 
 /* Estilos Enlaces */
 

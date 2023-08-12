@@ -24,6 +24,7 @@
     width: 55%;
     margin-right: 10px;
     margin-left: 10px;
+    justify-content: center;
   }
   .main-nav {
     position: static;
@@ -178,6 +179,134 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  #pos1 {
+    width: 60%;
+    height: auto;
+  }
+  #pos2 {
+    width: 45%;
+    height: auto;
+  }
+  #pos3 {
+    width: 45%;
+    height: auto;
+  }
+  #pos1 img,
+  #pos2 img,
+  #pos3 img {
+    height: auto;
+  }
+  .pos-top {
+    width: 30%;
+    height: 240px;
+  }
+  .pos-top img {
+    height: 180px;
+  }
+  .pos-top div {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+  .title-link {
+    font-size: 1.5rem;
+  }
+  .anime-cards {
+    width: calc(100vw / 2.8);
+    height: 300px;
+  }
+  .anime-cards_img img {
+    height: 180px;
+  }
+
+  /* Estilos area de "Animes" */
+  .text-card {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* ================================= Estilos Para El Header 768px =========================== */
+  .flexRow-CC {
+    width: 35%;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .main-header {
+    height: 65px;
+  }
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .link-item {
+    font-size: 1.4rem;
+  }
+  .main-nav {
+    width: 45%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Estilos Para El Top */
+  .pos-top span {
+    font-size: 3rem;
+  }
+  .pos-top {
+    height: 320px;
+  }
+  .pos-top img {
+    height: 245px;
+  }
+
+  /* Estilos Enlaces */
+  .title-link {
+    font-size: 1.7rem;
+  }
+  .title-link a {
+    font-size: 1.7rem;
+  }
+
+  /* Estilos de las Cards */
+  .anime-cards {
+    width: calc(100vw / 3.3);
+    height: 350px;
+  }
+  .anime-cards_img img {
+    height: 220px;
+  }
+  .anime-cards_text a {
+    font-size: 1.4rem;
+  }
+  .anime-cards_text h3 {
+    font-size: 1.7rem;
+  }
+
+  /* Estilos Subpagina 'Animes' */
+  .card-container {
+    width: calc(100vw / 3.8);
+    height: calc(100vh / 2);
+  }
+  .card-container span,
+  .ir label {
+    font-size: 2rem;
+  }
+  .img-card {
+    width: 100%;
+    height: 300px;
+  }
+  .text-card {
+    font-size: 1.4rem;
+  }
+
+  /* Estilos Cards Del  Directorio */
+  .card-container_letras {
+    width: calc(100vw / 4.9);
+    height: calc(100vh / 5.9);
+  }
+}
+
 /* Medias Para Las Paginas Secundarias: Biografias, Listas, Episodios, etc */
 @media screen and (min-width: 768px) {
   /* Estilos Para La Subpágina de Lista de Episodios De Chainsaw Man */
@@ -272,5 +401,97 @@
   .trailer1 {
     width: 70%;
     height: 360px;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  /* Estilos Para La Subpágina de Lista de Episodios De Chainsaw Man */
+  .hero-image {
+    width: 95%;
+    height: calc(100vh - 60px);
+    background-image: url(../IMG/ChainsawMan320px.png);
+    background-position: center top;
+  }
+  .black-cape {
+    height: 100%;
+  }
+
+  /* Estilos Para Las Miniaturas */
+  .miniatura-eps {
+    width: 65%;
+  }
+  .miniatura-img {
+    height: 120px;
+  }
+  .number-eps {
+    font-size: 2rem;
+  }
+  .eps-title {
+    font-size: 1.4rem;
+  }
+  .Enlace {
+    font-size: 1.4rem;
+  }
+  /* Estilos Para El Glosario */
+  .caps-glosario {
+    width: 35%;
+  }
+  .button-list {
+    font-size: 1.2rem;
+  }
+
+  /* ================================ Estilos Episodio ========================================== */
+
+  .sipnosis {
+    font-size: 1.1rem;
+  }
+  /* Estilos Contenedor del iframe */
+  .controls-eps {
+    width: 45%;
+  }
+  .next,
+  .down {
+    font-size: 1rem;
+  }
+  .controls-eps a:nth-child(1) span,
+  .controls-eps a:nth-child(5) span {
+    font-size: 1.8rem;
+  }
+  .article1-content {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sipnosis {
+    font-size: 1.2rem;
+  }
+  .article1-img2 {
+    height: 450px;
+  }
+  .article1-img2 img {
+    object-fit: cover;
+    object-position: top center;
+  }
+  .article1-1024px .article1-content {
+    width: 65%;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article1-content {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .article1-1024px .article1-content {
+    width: 55%;
+    font-size: 1.4rem;
+  }
+  .trailer1 {
+    height: 480px;
+  }
+  .sipnosis {
+    font-size: 1.4rem;
   }
 }
